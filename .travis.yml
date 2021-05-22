@@ -4,6 +4,7 @@ rvm:
 cache:
   - bundler
   - yarn
+os: osx
 services:
   - postgresql
 before_install:
