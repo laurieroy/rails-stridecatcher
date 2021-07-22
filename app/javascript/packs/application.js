@@ -12,8 +12,8 @@ Rails.start();
 Turbolinks.start();
 ActiveStorage.start();
 
-import "bootstrap";
-import "./stylesheets/application";
+import * as bootstrap from "bootstrap";
+import "../stylesheets/application";
 
 document.addEventListener("turbolinks:load", () => {
   var popoverTriggerList = [].slice.call(
