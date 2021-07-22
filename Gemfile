@@ -51,3 +51,5 @@ end
 
 
 gem 'strong_migrations', '~> 0.7.7'
+
+gem "devise", "~> 4.8"
