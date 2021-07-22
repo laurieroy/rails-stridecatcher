@@ -45,7 +45,7 @@ rails s
 
 If installing locally, can run using foreman to run any procfiles:
 
-Install [Foreman](https://github.com/ddollar/foreman) globally on machine, (will run on 5000 instead of 3000)
+Install [Foreman](https://github.com/ddollar/foreman) globally on machine, (will run on 5000 instead of 3000). This is used for automatic db updates on release.
 
 ```
 foreman start
