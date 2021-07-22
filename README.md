@@ -6,6 +6,8 @@ This is a Strava clone, built following Steve Polito's [tutorial](https://www.ra
 
 Ruby(2.6.3) on Rails (6.1.3.2) using PG (13) for the db. UI is Bootstrap 5.0, for now. I'm using RSpec / FactoryBot for testing.
 
+NOTE: I am following along with the tutorial, but switch out minitest for RSpec. I feel some of these tests are unnecessary, e.g., signing up tests devise, which we don't need to do. I am assuming that later on, he will add some functionality to the flow that it will be necessary. If not, I will remove it later.
+
 Thanks to Steve Polito for the tutorial and Chris Oliver for the [Procfile](https://github.com/excid3/jumpstart/blob/master/Procfile.dev).
 
 ## To use locally:

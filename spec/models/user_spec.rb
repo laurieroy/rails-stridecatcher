@@ -3,9 +3,9 @@ require 'rails_helper'
 RSpec.describe User, type: :model do
 
   describe "creation" do
-    let!(:user) { FactoryBot.create(:user) }
+    let!(:user) { FactoryBot.build(:user) }
     
-    it "can be created" do
+    it "hs a valid factory" do
       expect(user).to be_valid
     end
   end

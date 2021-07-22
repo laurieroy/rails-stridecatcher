@@ -9,6 +9,16 @@ FactoryBot.define do
     # time_zone { "Central Time (US & Canada)" }
     confirmed_at { Time.zone.now }
   end
+
+  factory :confirmed_user do
+    email { "confirmed_user@example.com" }
+    # first_name { "Confirmed" }
+		# last_name  { "User" }	
+    password { "password" }
+    password_confirmation { "password" }
+    # time_zone { "Central Time (US & Canada)" }
+    confirmed_at { Time.zone.now }
+  end
 end
 
 
