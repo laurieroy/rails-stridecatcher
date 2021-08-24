@@ -1,10 +1,10 @@
-require 'rails_helper'
+require "rails_helper"
 
-RSpec.feature "UserRegistrations", type: :feature do
-	describe "signing up" do
+RSpec.describe "UserRegistrations", type: :system  do
+	scenario "with valid credentials" do
 		let!(:user) { FactoryBot.create(:user) }
-
-		it "registers a new user" do
+byebug
+		# it "registers a new user" do
 			visit new_user_registration_path
 
 			assert_difference "User.count", 1 do
@@ -14,9 +14,8 @@ RSpec.feature "UserRegistrations", type: :feature do
 
 				click_button "Sign up"
 			end
-		end
+		# end
 		
-  end
 
 
 	end
