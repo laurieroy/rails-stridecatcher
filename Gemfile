@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+git_source(:github) { |repo| 'https://github.com/#{repo}.git' }
 
 ruby '2.6.3'
 
@@ -31,7 +31,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-    gem 'capybara', '~> 3.35', '>= 3.35.3'
+  gem 'capybara', '~> 3.35', '>= 3.35.3'
   gem 'factory_bot_rails'
   gem 'rspec-rails', '~> 5.0.0'
   gem 'webdrivers'
@@ -52,6 +52,6 @@ end
 
 gem 'strong_migrations', '~> 0.7.7'
 
-gem "devise", "~> 4.8"
+gem 'devise', '~> 4.8'
 gem 'honeybadger'
 gem 'sendgrid-ruby', '~> 6.4'
