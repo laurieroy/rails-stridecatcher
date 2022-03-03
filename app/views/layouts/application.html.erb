@@ -2,7 +2,12 @@
 <html>
 
 <head>
+<% if content_for? :title %>
+  <title><%= yield :title %> | Stridecatcher</title>
+<% else %>
   <title>Stridecatcher</title>
+<% end %>
+ 
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
@@ -10,18 +15,18 @@
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  <%= link_to "Create an account", new_user_registration_path unless current_user %>
-  <%= link_to "Sign In", new_user_session_path unless current_user %>
-  <%= link_to "Sign Out", destroy_user_session_path, method: :delete if current_user %>
 </head>
 
 <body>
   <!-- will be updated -->
-  <main class="container">
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+  <%= render partial: "shared/navbar" %>
 
-  <%= yield %>
+  <main class="container">
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <%= yield %>
+
   </main>
 </body>
 
